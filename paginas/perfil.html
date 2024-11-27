@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Gamer Mania</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="text-tittle">Gamer Mania</h1>
+        </div>
+        <nav>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="../index.html">Cerrar sesion</a></li>
+                <li><a href="carrito.html">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="perfil">
+        <section class="info">
+            <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="photo">
+            <h2>Nombre del Usuario</h2>
+            <p>Email: </p>
+            <p>Teléfono: </p>
+        </section>
+        <section class="edit">
+            <h3>Editar Información</h3>
+            <form action="/update-profile" method="POST">
+                <label class="form-info" for="name">Nombre:</label>
+                <input class="input-info" type="text" id="name" name="name" required>
+
+                <label class="form-info" for="email">Email:</label>
+                <input class="input-info" type="email" id="email" name="email" required>
+
+                <label class="form-info" for="country">Pais</label>
+                <input class="input-info" type="text" id="country" name="country" required>
+
+                <label class="form-info" for="province">Provincia</label>
+                <input class="input-info" type="text" id="province" name="province" required>
+
+                <label class="form-info" for="direction">Direccion</label>
+                <input class="input-info" type="text" id="direction" name="direction" required>
+
+                <label class="form-info" for="phone">Teléfono:</label>
+                <input class="input-info" type="tel" id="phone" name="tel">
+
+                <button type="submit" class="save-button">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Gamer Mania Tienda de Electrónica</p>
+    </footer>
+</body>
+
+</html>
