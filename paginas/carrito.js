@@ -12,7 +12,7 @@ function actualizar() {
         const itemDiv = document.createElement('div')
 
         // Crear el texto del producto
-        const itemText = document.createElement('span');
+        const itemText = document.createElement('span')
         itemText.textContent = `${item.name} - $${item.price.toLocaleString()}`
         itemDiv.appendChild(itemText)
 
@@ -24,8 +24,13 @@ function actualizar() {
         itemDiv.appendChild(deleteButton)
         cartItemsContainer.appendChild(itemDiv)
 
+<<<<<<< HEAD
         total += item.price; //Suma el precio del producto
     })
+=======
+        total += item.price //Suma el precio del producto
+    });
+>>>>>>> 5f9a1b99a535364a535ae909bb78132fbd4dec03
 
     // Actualizar el total
     totalElementos.textContent = `Total: $${total.toLocaleString()}`
