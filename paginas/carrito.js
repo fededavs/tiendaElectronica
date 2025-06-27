@@ -24,13 +24,8 @@ function actualizar() {
         itemDiv.appendChild(deleteButton)
         cartItemsContainer.appendChild(itemDiv)
 
-<<<<<<< HEAD
         total += item.price; //Suma el precio del producto
     })
-=======
-        total += item.price //Suma el precio del producto
-    });
->>>>>>> 5f9a1b99a535364a535ae909bb78132fbd4dec03
 
     // Actualizar el total
     totalElementos.textContent = `Total: $${total.toLocaleString()}`
